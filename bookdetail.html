@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Details - Just Crayon</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+<div class="nav-container">
+<div class="nav-logo">
+<span class="logo-text">Just Crayon</span>
+<i data-lucide="palette" class="logo-icon"></i>
+</div>
+<ul class="nav-menu">
+<li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="books.html" class="nav-link active">Books</a></li>
+<li><a href="index.html#about" class="nav-link">About Us</a></li>
+<li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+</ul>
+</div>
+</nav>
+
+<!-- Back Button -->
+<div class="back-nav">
+<a href="books.html" class="back-link">
+<i data-lucide="arrow-left"></i>
+<span>Back to Bookshelf</span>
+</a>
+</div>
+
+<!-- Book Detail Section -->
+<section class="book-detail-section">
+<div class="detail-container">
+<div class="detail-content">
+<!-- Book Image -->
+<div class="detail-image">
+<div class="image-frame">
+<img id="book-image" src="" alt="Book Cover">
+</div>
+</div>
+
+<!-- Book Information -->
+<div class="detail-info">
+<div class="book-badge">
+<i data-lucide="star" class="badge-icon"></i>
+<span>Bestseller</span>
+</div>
+<h1 id="book-title" class="book-title"></h1>
+<div class="book-rating">
+<div class="stars">
+<i data-lucide="star" class="star filled"></i>
+<i data-lucide="star" class="star filled"></i>
+<i data-lucide="star" class="star filled"></i>
+<i data-lucide="star" class="star filled"></i>
+<i data-lucide="star" class="star filled"></i>
+</div>
+<span class="rating-text">(256 Happy Customers)</span>
+</div>
+<p class="book-price" id="book-price"></p>
+<div class="book-description">
+<h3>About This Book</h3>
+<p id="book-description"></p>
+</div>
+
+<div class="book-features">
+<h3>What's Inside</h3>
+<ul class="features-list">
+<li>
+<i data-lucide="check-circle" class="check-icon"></i>
+<span><strong>50 Unique Designs</strong> - Hours of creative fun</span>
+</li>
+<li>
+<i data-lucide="check-circle" class="check-icon"></i>
+<span><strong>Single-Sided Pages</strong> - No bleed-through</span>
+</li>
+<li>
+<i data-lucide="check-circle" class="check-icon"></i>
+<span><strong>High-Quality Paper</strong> - Works with all coloring tools</span>
+</li>
+<li>
+<i data-lucide="check-circle" class="check-icon"></i>
+<span><strong>Large 8.5" x 11"</strong> - Perfect for little hands</span>
+</li>
+<li>
+<i data-lucide="check-circle" class="check-icon"></i>
+<span><strong>Cute Chibi Style</strong> - Adorable animal designs</span>
+</li>
+<li>
+<i data-lucide="check-circle" class="check-icon"></i>
+<span><strong>Age 3-10</strong> - Beginner-friendly bold lines</span>
+</li>
+</ul>
+</div>
+
+<div class="purchase-section">
+<a id="buy-button" href="#" class="btn btn-buy-large">
+<i data-lucide="shopping-cart"></i>
+<span>Buy Now on Amazon</span>
+</a>
+<div class="security-badges">
+<div class="security-item">
+<i data-lucide="shield-check"></i>
+<span>Secure Checkout</span>
+</div>
+<div class="security-item">
+<i data-lucide="truck"></i>
+<span>Fast Shipping</span>
+</div>
+<div class="security-item">
+<i data-lucide="package"></i>
+<span>Easy Returns</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Related Books -->
+<section class="related-books-section">
+<div class="section-header">
+<h2>You Might Also <span class="text-coral">Like</span></h2>
+</div>
+<div class="related-books-grid"></div>
+</section>
+
+<script src="script.js"></script>
+<script>
+// Initialize Icons
+lucide.createIcons();
+</script>
+</body>
+</html>
