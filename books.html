@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Books - Just Crayon</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+<div class="nav-container">
+<div class="nav-logo">
+<span class="logo-text">Just Crayon</span>
+<i data-lucide="palette" class="logo-icon"></i>
+</div>
+<ul class="nav-menu">
+<li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="books.html" class="nav-link active">Books</a></li>
+<li><a href="index.html#about" class="nav-link">About Us</a></li>
+<li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+</ul>
+</div>
+</nav>
+
+<!-- Books Page Header -->
+<section class="books-page-header">
+<div class="decor d1">✨</div>
+<div class="decor d2">🎨</div>
+<div class="decor d3">🌟</div>
+<div class="decor d4">🖍</div>
+<div class="header-content">
+<div class="badge">
+<i data-lucide="book-open" class="icon-coral"></i>
+<span>Explore Our Collection</span>
+</div>
+<h1>Our Cozy <span class="text-coral">Bookshelf</span></h1>
+<p class="header-subtitle">Click any book to see details and purchase</p>
+</div>
+</section>
+
+<!-- Bookshelf Section -->
+<section class="bookshelf-section">
+<div class="bookshelf-container">
+<!-- Bookshelf will be rendered here by JavaScript -->
+<div class="bookshelf-grid"></div>
+</div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+<div class="cta-content">
+<h2>Can't Find What You're <span class="text-coral">Looking For?</span></h2>
+<p>We're constantly adding new coloring books to our collection. Check back soon!</p>
+<div class="cta-buttons">
+<a href="index.html#about" class="btn btn-hero">Learn More About Us <i data-lucide="heart"></i></a>
+<a href="index.html#faq" class="btn btn-outline">Have Questions? <i data-lucide="help-circle"></i></a>
+</div>
+</div>
+</section>
+
+<script src="script.js"></script>
+<script>
+// Initialize Icons
+lucide.createIcons();
+</script>
+</body>
+</html>
